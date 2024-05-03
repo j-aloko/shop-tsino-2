@@ -126,58 +126,60 @@ function FooterContainer() {
   };
 
   return (
-    <Box display="flex" flexDirection="column">
-      <Grid container spacing={2} p={{ sm: 5, xs: 2 }} sx={(theme) => ({ backgroundColor: alpha(theme.palette.secondary.light, 0.15) })}>
-        <Grid item sm={4} xs={12} p={2}>
-          <Stack spacing={2}>
-            <Logo />
-            <Typography text={aboutSummary || ''} variant="body2" color="text.secondary" />
-            <Box display="flex" alignItems="center" flexWrap="wrap" rowGap={1} columnGap={1}>
-              {React.Children.toArray(socialIcons?.map((icon) => <SocialIcon {...icon} />))}
-            </Box>
-          </Stack>
-        </Grid>
-        <Grid item sm={4} xs={12} p={2}>
-          <Stack spacing={1.5}>
-            <Stack alignItems="center">
-              <AlternateEmailIcon color="secondary" fontSize="large" />
-              <Typography text={ready ? translate('footer.newsletter') : 'NewsLetter'} variant="h5" color="text.primary" fontWeight={600} />
+    <Box>
+      <Stack>
+        <Grid container spacing={2} p={{ sm: 5, xs: 2 }} sx={(theme) => ({ backgroundColor: alpha(theme.palette.secondary.light, 0.15) })}>
+          <Grid item sm={4} xs={12} p={2}>
+            <Stack spacing={2}>
+              <Logo />
+              <Typography text={aboutSummary || ''} variant="body2" color="text.secondary" />
+              <Box display="flex" alignItems="center" flexWrap="wrap" rowGap={1} columnGap={1}>
+                {React.Children.toArray(socialIcons?.map((icon) => <SocialIcon {...icon} />))}
+              </Box>
             </Stack>
-            <NewsLetter {...newsLetterFormProps} />
-          </Stack>
-        </Grid>
-        <Grid item sm={4} xs={12} p={2}>
-          <Stack spacing={2}>{React.Children.toArray(companyInfo?.map((info) => <CompanyInfoCard {...info} />))}</Stack>
-        </Grid>
-      </Grid>
-      <AppBar color="primary">
-        <Grid container p={2} alignItems="center">
-          <Grid item sm={4} xs={12} p={2}>
-            <Typography
-              text={`${ready ? translate('footer.copyright', { year: new Date().getFullYear() }) : `© ${new Date().getFullYear()}, All right reserved`}`}
-              variant="body2"
-              color="primary.contrastText"
-              fontWeight={600}
-            />
           </Grid>
           <Grid item sm={4} xs={12} p={2}>
-            <Box display="flex" alignItems="center" justifyContent={{ sm: 'center', xs: 'flex-start' }} flexWrap="wrap" columnGap={2} rowGap={1}>
-              {React.Children.toArray(
-                policies?.map(({ item, path }) => (
-                  <Link href={path}>
-                    <Typography text={item} variant="body2" color="primary.contrastText" fontWeight={600} />
-                  </Link>
-                ))
-              )}
-            </Box>
+            <Stack spacing={1.5}>
+              <Stack alignItems="center">
+                <AlternateEmailIcon color="secondary" fontSize="large" />
+                <Typography text={ready ? translate('footer.newsletter') : 'NewsLetter'} variant="h5" color="text.primary" fontWeight={600} />
+              </Stack>
+              <NewsLetter {...newsLetterFormProps} />
+            </Stack>
           </Grid>
           <Grid item sm={4} xs={12} p={2}>
-            <Box display="flex" alignItems="center" justifyContent={{ sm: 'flex-end', xs: 'flex-start' }} flexWrap="wrap" columnGap={1} rowGap={1}>
-              {React.Children.toArray(paymentMethods?.map((method) => <PaymentMethodLogo {...method} />))}
-            </Box>
+            <Stack spacing={2}>{React.Children.toArray(companyInfo?.map((info) => <CompanyInfoCard {...info} />))}</Stack>
           </Grid>
         </Grid>
-      </AppBar>
+        <AppBar color="primary">
+          <Grid container p={2} alignItems="center">
+            <Grid item sm={4} xs={12} p={2}>
+              <Typography
+                text={`${ready ? translate('footer.copyright', { year: new Date().getFullYear() }) : `© ${new Date().getFullYear()}, All right reserved`}`}
+                variant="body2"
+                color="primary.contrastText"
+                fontWeight={600}
+              />
+            </Grid>
+            <Grid item sm={4} xs={12} p={2}>
+              <Box display="flex" alignItems="center" justifyContent={{ sm: 'center', xs: 'flex-start' }} flexWrap="wrap" columnGap={2} rowGap={1}>
+                {React.Children.toArray(
+                  policies?.map(({ item, path }) => (
+                    <Link href={path}>
+                      <Typography text={item} variant="body2" color="primary.contrastText" fontWeight={600} />
+                    </Link>
+                  ))
+                )}
+              </Box>
+            </Grid>
+            <Grid item sm={4} xs={12} p={2}>
+              <Box display="flex" alignItems="center" justifyContent={{ sm: 'flex-end', xs: 'flex-start' }} flexWrap="wrap" columnGap={1} rowGap={1}>
+                {React.Children.toArray(paymentMethods?.map((method) => <PaymentMethodLogo {...method} />))}
+              </Box>
+            </Grid>
+          </Grid>
+        </AppBar>
+      </Stack>
     </Box>
   );
 }
