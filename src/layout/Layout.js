@@ -22,7 +22,7 @@ function Layout({ children }) {
       <Box flexGrow={1} sx={{ mb: '5rem', mt: { sm: '12rem', xs: '15rem' } }}>
         <main>{children}</main>
       </Box>
-      <Box sx={{ mt: 'auto' }}>
+      <Box sx={{ mt: 'auto', width: '100%' }}>
         <footer>
           <FooterContainer />
         </footer>
