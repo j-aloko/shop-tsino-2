@@ -98,21 +98,21 @@ function FullPageCartItemsContainer() {
                   <thead>
                     <tr>
                       <th className="h5">
-                        <Typography text={ready ? translate('cart.dataGridHeaders.product') : 'Product'} variant="subtitle1" color="primary" fontWeight={600} />
+                        <Typography text={ready ? translate('cart.dataGridHeaders.product') : 'Product'} variant="subtitle1" color="text.primary" fontWeight={600} />
                       </th>
                       {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
                       <th />
                       <th>
-                        <Typography text={ready ? translate('cart.dataGridHeaders.price') : 'Price'} variant="subtitle1" color="primary" fontWeight={600} />
+                        <Typography text={ready ? translate('cart.dataGridHeaders.price') : 'Price'} variant="subtitle1" color="text.primary" fontWeight={600} />
                       </th>
                       <th>
-                        <Typography text={ready ? translate('cart.dataGridHeaders.quantity') : 'Quantity'} variant="subtitle1" color="primary" fontWeight={600} />
+                        <Typography text={ready ? translate('cart.dataGridHeaders.quantity') : 'Quantity'} variant="subtitle1" color="text.primary" fontWeight={600} />
                       </th>
                       <th>
-                        <Typography text={ready ? translate('cart.dataGridHeaders.discount') : 'Discount'} variant="subtitle1" color="primary" fontWeight={600} />
+                        <Typography text={ready ? translate('cart.dataGridHeaders.discount') : 'Discount'} variant="subtitle1" color="text.primary" fontWeight={600} />
                       </th>
                       <th>
-                        <Typography text={ready ? translate('cart.dataGridHeaders.subtotal') : 'Subtotal'} variant="subtitle1" color="primary" fontWeight={600} />
+                        <Typography text={ready ? translate('cart.dataGridHeaders.subtotal') : 'Subtotal'} variant="subtitle1" color="text.primary" fontWeight={600} />
                       </th>
                     </tr>
                   </thead>

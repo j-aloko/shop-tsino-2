@@ -36,7 +36,7 @@ const theme = createTheme({
     background: { default: '#fafafa', paper: '#fff' },
     common: { black: '#000', white: '#fff' },
     error: { contrastText: '#fff', dark: '#d32f2f', light: '#e57373', main: '#f44336' },
-    primary: { contrastText: '#fff', dark: 'rgba(238, 127, 24, 1)', light: 'rgba(253, 159, 71, 1)', main: 'rgba(253, 150, 54, 1)' },
+    primary: { contrastText: '#fff', dark: 'rgba(202, 103, 12, 100)', light: 'rgba(253, 150, 54, 1)', main: 'rgba(224, 121, 27, 100)' },
     secondary: { contrastText: '#fff', dark: 'rgba(23, 39, 73, 1)', light: '#7986cb', main: 'rgba(66, 90, 139, 1)' },
     socialMedia: { facebook: '#0165E1', instagram: '#FD1D1D', pinterest: '#E60023', twitter: '#1D9BF0' },
     text: { disabled: 'rgba(0, 0, 0, 0.38)', hint: 'rgba(0, 0, 0, 0.38)', primary: 'rgba(0, 0, 0, 0.87)', secondary: 'rgba(0, 0, 0, 0.70)' },
