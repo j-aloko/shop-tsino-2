@@ -40,7 +40,7 @@ Our codebase is meticulously structured to promote both reusability and maintain
 
 ## Styling and Responsive Design
 
-Styling is handled using a combination of Material-UI, react-bootstrap and custom CSS. We've also implemented a responsive design, ensuring our storefront looks great on devices of all sizes.
+Styling is handled using a combination of Material-UI, react-bootstrap for carousel, and traditional CSS. We've also implemented a responsive design, ensuring our storefront looks great on devices of all sizes.
 
 ## Key Features
 
