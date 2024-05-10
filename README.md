@@ -36,15 +36,23 @@ In summary, our architecture is a harmonious blend of Next.js for frontend rende
 
 Our codebase is meticulously structured to promote both reusability and maintainability:
 
+- **Pages Directory**: This directory is specific to Next.js and is where all the page components reside. Each file corresponds to a route based on its name. This is where we leverage the power of Next.js's file-system based routing.
+
+- **API Directory**: This directory contains all the API calls to Shopify's Storefront and Admin GraphQL APIs. It helps to keep our API calls isolated and organized.
+
 - **Components Directory**: This is where all reusable UI components are stored. Each component is designed to be stateless and only takes props, ensuring maximum reusability across different parts of the application.
 
-- **Containers Directory**: This directory houses the state management logic, hooks, custom hooks, and API interactions. Containers are responsible for fetching data and managing state, which are then passed as props to components. This separation of concerns allows our components to remain clean and focused on presentation.
+- **Containers Directory**: This directory houses the execution of state management logic, hooks, custom hooks, and API interactions. Containers are where data is fetched and state is accessed, which are then passed as props to components. This separation of concerns allows our components to remain clean and focused on presentation.
 
 - **Hooks Directory**: All custom hooks are stored in this directory. These hooks encapsulate complex logic, such as state management and side effects, into reusable functions. This helps to keep our components clean and focused on rendering.
 
 - **Services Directory**: This is where we manage our Redux state and asynchronous middleware with Redux Toolkit. It also contains the implementations for interacting with Shopify's Storefront and Admin GraphQL APIs. By isolating these services, we ensure that any changes to our data fetching logic or state management don't affect the rest of the codebase.
 
 - **Public/Locales Directory**: This directory stores translations of static resources in English, Spanish (Espanol), and French. These translations allow us to easily internationalize our storefront. Additional languages can be added as needed.
+
+- **Utils Directory**: This directory contains utility functions and constants that are used across the application. It promotes code reusability and cleanliness.
+
+- **Styles Directory**: This directory contains all the global styles and theme related files. It helps to maintain a consistent look and feel across the application.
 
 - **Theme Directory**: This directory is dedicated to customizing the application's theme. It includes all the necessary configurations for typography, color schemes, and other stylistic elements. This centralized approach to styling makes it easy to maintain a consistent look and feel across the entire application.
 
