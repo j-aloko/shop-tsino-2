@@ -20,7 +20,17 @@ Our storefront is built using **Next.js**, a popular React framework that enable
 
 ## Architecture
 
-The architecture of our storefront is designed to maximize the benefits of Next.js and Shopify's APIs. Next.js handles the frontend, rendering our React components and serving our pages, while Shopify's APIs are used to fetch and manage data.
+Our ecommerce storefront architecture is meticulously crafted to harness the full potential of **Next.js**, **Shopify's APIs**, and **Redux Toolkit**. 
+
+At the heart of our architecture is **Next.js**, a powerful React framework that takes charge of the frontend. It is responsible for rendering our React components and serving our pages, ensuring a seamless and responsive user interface.
+
+The **Shopify's Storefront and Admin GraphQL APIs** play a crucial role in our architecture. They are used to fetch product data, manage shopping carts, handle customer accounts, and process orders. This integration with Shopify's APIs allows us to provide a robust and reliable ecommerce solution.
+
+To manage the application state, we employ the **Redux Toolkit**, a modern, opinionated, batteries-included toolset for efficient Redux development. It simplifies the Redux setup and includes utilities to simplify tasks like performing asynchronous logic with **async thunks**.
+
+Async thunks are used to handle asynchronous operations, allowing us to write Redux logic that interacts with the server. This ensures that our application remains responsive and performant, even when dealing with complex state management.
+
+In summary, our architecture is a harmonious blend of Next.js for frontend rendering, Shopify's APIs for data management, and Redux Toolkit with async thunks for state management, providing a comprehensive, efficient, and scalable solution for custom ecommerce storefronts. This architecture not only delivers stunning visuals but also ensures a smooth and engaging shopping experience for our customers.
 
 ## Codebase Structure
 
