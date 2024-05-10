@@ -20,7 +20,7 @@ Our storefront is built using **Next.js**, a popular React framework that enable
 
 ## Architecture
 
-Our ecommerce storefront architecture is meticulously crafted to harness the full potential of **Next.js**, **Shopify's APIs**, and **Redux Toolkit**. 
+Our ecommerce storefront architecture is meticulously crafted to harness the full potential of **Next.js**, **Shopify's APIs**, and **Redux Toolkit**.
 
 At the heart of our architecture is **Next.js**, a powerful React framework that takes charge of the frontend. It is responsible for rendering our React components and serving our pages, ensuring a seamless and responsive user interface.
 
