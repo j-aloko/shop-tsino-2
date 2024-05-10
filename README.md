@@ -50,7 +50,7 @@ Our codebase is meticulously structured to promote both reusability and maintain
 
 - **Public/Locales Directory**: This directory stores translations of static resources in English, Spanish (Espanol), and French. These translations allow us to easily internationalize our storefront. Additional languages can be added as needed.
 
-- **Utils Directory**: This directory contains utility functions and constants that are used across the application. It promotes code reusability and cleanliness.
+- **Utils Directory**: This directory contains utility functions that are used across the application. It promotes code reusability and cleanliness.
 
 - **Styles Directory**: This directory contains all the global styles and theme related files. It helps to maintain a consistent look and feel across the application.
 
