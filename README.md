@@ -1,4 +1,6 @@
-# Custom Shopify Storefront
+# Documentation
+
+## Custom Shopify Storefront
 
 Welcome to the documentation for our custom Shopify storefront. This storefront is a robust and feature-rich e-commerce solution built using Next.js and Shopify's GraphQL APIs. It offers a unique shopping experience, with features like multilingual support, price conversion, intelligent variant selection, dynamic product filtering, and much more.
 
@@ -7,8 +9,6 @@ Our storefront is designed to be highly customizable and easy to use, with a cle
 In this documentation, you'll find detailed information about the storefront's architecture, key features, codebase structure, and more. We also provide comprehensive onboarding support, including training sessions, technical support, and regular updates.
 
 Whether you're a developer looking to customize the storefront or a store owner wanting to understand how it works, this documentation is here to guide you.
-
-# Documentation
 
 ## Introduction
 
@@ -143,7 +143,7 @@ Our onboarding support includes:
 
 Please feel free to contact us at waynegreen344@gmail.com for any queries or assistance.
 
-# Getting Server Started
+# Getting Local Server Started
 
 First, run the development server:
 
@@ -159,7 +159,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-# Deploying on Vercel
+# Deploying App on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
