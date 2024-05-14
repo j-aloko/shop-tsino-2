@@ -65,46 +65,63 @@ Styling is handled using a combination of Material-UI, react-bootstrap for carou
 Our custom Shopify storefront includes a variety of features designed to provide a seamless and enjoyable shopping experience:
 
 - **Featured Collections**: Our storefront prominently displays featured collections, allowing customers to quickly find and browse your top product collections.
+
   ![responsive-homepage-mockup](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/8a7bb3f4-4daa-4711-97e7-d889ed020a17)
 
 - **Product Listing**: We provide a clean and organized product listing, making it easy for customers to browse and select products.
+
   ![Product Listing - 1](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/fb2b0863-ee9e-4ec9-b898-ecf665a2af4b)
   ![Product Listing - 2](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/4ddae450-17f8-441d-b7f8-3b8924464c6d)
 
 - **Cart Management**: Our cart management system allows customers to easily add products to their cart, view their cart contents, and modify quantities or remove items as needed. This feature is designed to be intuitive and user-friendly, providing customers with a clear overview of their potential purchases.
+
   ![Cart Management-1](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/ab6cd730-7bdd-406e-9ce8-8b187d9cc22e)
   ![Cart Management-2](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/20ce27df-0321-484a-b90c-b201d92a2391)
 
 - **Checkout Functionality**: We provide a secure and efficient checkout process. Customers can review their orders, choose their preferred shipping method, and make payments using a variety of options. Our checkout process is also designed to handle customer information securely, ensuring a safe shopping experience.
+
   ![Checkout Functionality](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/c97cd6af-6be1-4513-b2bc-0c23484d910a)
 
 - **Robust User Authentication**: From signup to account activation, login, and password management, our fully functional user authentication ensures a secure and smooth user journey.
+
   ![Auth-account-activate](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/82b10c7f-7c61-4c5b-8958-caccfff964fb)
+
   ![Auth-forgot-password](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/abe38dec-db1f-4671-a518-da18fb4abfb8)
+
   ![Auth-login](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/f40db592-ce9f-44ab-be77-1afaf416d100)
+
   ![Auth-reset-password](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/0a35f17f-43e2-4669-acf2-a3e0dbbf4a2d)
+
   ![Auth-signup](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/eb9349fe-21c0-45d5-9a26-e5df14026cdb)
 
 - **Multilingual Support**: Our platform is ready to speak your language. With built-in translations for English, Español, and French, we break down language barriers. Plus, our customization options allow for further language support, making global shopping a breeze.
+
   ![Multilingual Support](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/701caa9a-2f8e-4afc-8241-61133015fdf3)
 
 - **Price Conversion**: Our visitors can effortlessly convert product prices into their local currency, making shopping a seamless experience no matter where they are in the world.
+
   ![Price Conversion](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/e33e089c-e13c-4561-a097-e7cdaf0a4884)
 
 - **Intelligent Variant Selection**: Our online store offers an intelligent variant selection feature for products. If a customer selects a variant that is unavailable, the system automatically selects the first available option, preventing any shopping interruptions.
+
   ![Intelligent Variant Selection](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/918a0b2b-89ab-421b-9a94-f5e17b784c8a)
 
 - **Dynamic Product Filtering**: Our collections page isn’t just a list. With dynamic filtering, customers can sort products by price range and other options, making their search for the perfect item quick and efficient.
+
   ![Dynamic Product Filtering](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/120ae3be-5077-407b-930d-03017273ac21)
 
 - **Quick Search**: Instant results, no page reloads. Our quick search makes finding products faster and easier, enhancing the shopping experience.
+
   ![Ajax Quick Search - 1](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/ff93ea28-8ddd-4eab-a9b7-96094c2385fa)
+
   ![Ajax Quick Search - 2](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/d7400a24-7708-4ae8-a674-e0cf3feed0e6)
 
 - **Newsletter Subscription**: Stay in the loop! Our newsletter feature allows customers to subscribe and receive regular updates about our latest products, special offers, and exclusive deals.
+
   ![Newsletter Subscription](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/9b3ccbc9-b45c-4d68-936a-e7f46a144b87)
 
 - **Mega Menu**: Navigate with ease. Our mega menu offers a comprehensive overview of all our pages, making it easy for customers to find exactly what they’re looking for.
+
   ![Mega Menu](https://github.com/j-aloko/shoptsino-uploaded-images/assets/93955657/5d2f21a1-4ce6-46b8-a35f-3fc33022fde8)
 
 ## Performance Optimization
@@ -142,6 +159,27 @@ Our onboarding support includes:
 - **Ongoing Support**: Even after the onboarding process, we'll be available to provide ongoing support and answer any questions you may have.
 
 Please feel free to contact us at waynegreen344@gmail.com for any queries or assistance.
+
+## Technical Requirements
+
+Before running this application, make sure you have the following prerequisites:
+
+- **Node.js**: You should have the latest stable version of Node.js installed. You can download it from Node.js official [website](https://nodejs.org/en/download/).
+
+- **npm or Yarn**: These are Node.js package managers used for managing project dependencies. npm is distributed with Node.js, which means that when you download Node.js, you automatically get npm installed on your computer. Yarn is an alternative to npm. You can download Yarn from Yarn official website.
+
+- **Environment Variables**: Set up the following environment variables in a `.env.local` file. You can use the provided `.env.local.example` file as a template:
+
+  - **HOST**: The domain URL of the hosted app.
+  - **SHOPIFY_STORE_DOMAIN** and **NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN**: Your default Shopify domain.
+  - **NEXT_PUBLIC_NAME_STORE_NAME**: The name of your store.
+  - **NEXT_PUBLIC_ALTERNATE_STORE_NAME**: An alternate name or initials for your store.
+  - **NEXT_PUBLIC_STORE_EMAIL**: The email address for your store.
+  - **SHOPIFY_API_VERSION**: The version of the Shopify API you're using.
+  - **SHOPIFY_STOREFRONT_ACCESS_TOKEN** and **SHOPIFY_ADMIN_ACCESS_TOKEN**: Your Shopify storefront and admin access tokens, respectively.
+  - **NEXT_PUBLIC_NEWSLETTER_MODAL_OPEN_TIME**: The time it takes in milliseconds for the newsletter alert modal to display.
+
+Please ensure that you have these prerequisites and environment variables correctly set up before running the application. If you encounter any issues or need further assistance, please don't hesitate to contact us.
 
 # Getting Local Server Started
 
