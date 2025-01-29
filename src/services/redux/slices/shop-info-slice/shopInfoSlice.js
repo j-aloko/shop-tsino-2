@@ -86,15 +86,7 @@ export const shopInfoSlice = createSlice({
         state.availableLanguages = action.payload.availableLanguages;
       })
       .addCase(getAvailableCountries.fulfilled, (state, action) => {
-        const seenCurrencies = new Set();
         state.availableCountries = action.payload.availableCountries
-          ?.filter(({ currency: { isoCode: currencyIsoCode } }) => {
-            if (seenCurrencies.has(currencyIsoCode)) {
-              return false;
-            }
-            seenCurrencies.add(currencyIsoCode);
-            return true;
-          })
           .map(({ isoCode: countryIsoCode, currency: { isoCode: currencyIsoCode, symbol } }) => ({
             countryIsoCode,
             currencyIsoCode,
