@@ -86,12 +86,11 @@ export const shopInfoSlice = createSlice({
         state.availableLanguages = action.payload.availableLanguages;
       })
       .addCase(getAvailableCountries.fulfilled, (state, action) => {
-        state.availableCountries = action.payload.availableCountries
-          .map(({ isoCode: countryIsoCode, currency: { isoCode: currencyIsoCode, symbol } }) => ({
-            countryIsoCode,
-            currencyIsoCode,
-            symbol,
-          }));
+        state.availableCountries = action.payload.availableCountries.map(({ isoCode: countryIsoCode, currency: { isoCode: currencyIsoCode, symbol } }) => ({
+          countryIsoCode,
+          currencyIsoCode,
+          symbol,
+        }));
       });
   },
   initialState,
