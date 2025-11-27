@@ -119,16 +119,7 @@ function DrawerCartItemsContainer() {
               )}
             </Stack>
           </ScrollableBox>
-          <Stack
-            spacing={1}
-            position="absolute"
-            left={0}
-            bottom={0}
-            width="100%"
-            boxShadow={1}
-            borderRadius={2}
-            p={3}
-            sx={(theme) => ({ backgroundColor: alpha(theme.palette.secondary.light, 0.15) })}>
+          <Stack spacing={1} position="absolute" left={0} bottom={0} width="100%" boxShadow={1} borderRadius={2} p={3} backgroundColor="background.paper">
             <Box flexGrow={1} display="flex" alignItems="center" justifyContent="space-between">
               <Typography
                 text={ready ? translate('cart.lineItems.totalProductsDiscount') : 'Total Product Discounts'}
@@ -194,7 +185,7 @@ function DrawerCartItemsContainer() {
                 variant="body2"
                 color="text.secondary"
                 fontWeight={600}
-                style={{ lineHeight: 1.57 }}
+                style={{ lineHeight: 1.57, opacity: 0.7 }}
               />
             </Box>
             <Box flexGrow={1} display="flex" alignItems="center" justifyContent="space-between">
